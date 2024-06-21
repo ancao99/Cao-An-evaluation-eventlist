@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="container">
+        <button id="addEventButton">Add New Event</button>
+
+        <div class="header">
+            <div class="head">Event</div>
+            <div class="head">Start</div>
+            <div class="head">End</div>
+            <div class="head">Action</div>
+        </div>
+
+        <div id="eventList"></div>
+
+        <form id="addEventForm" class="hidden">
+            <input type="text" id="addEventName" placeholder="Event Name" required>
+            <input type="date" id="addStartDate" required>
+            <input type="date" id="addEndDate" required>
+            <button id="confirmAddButton" type="button">Add</button>
+            <button id="cancelAddButton" type="button">Cancel</button>
+        </form>
+    </section>
+    <script src="api/eventApi.js"></script>
+    <script src="feastures/controler.js"></script>
+    <script src="feastures/model.js"></script>
+    <script src="feastures/view.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
