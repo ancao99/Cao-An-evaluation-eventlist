@@ -27,11 +27,11 @@ class EventView {
   
       const startElem = document.createElement("div");
       startElem.classList.add("event-item__start-date");
-      startElem.textContent = `Start: ${startDate}`;
+      startElem.textContent = startDate;
   
       const endElem = document.createElement("div");
       endElem.classList.add("event-item__end-date");
-      endElem.textContent = `End: ${endDate}`;
+      endElem.textContent = endDate;
   
       const updateBtn = document.createElement("button");
       updateBtn.classList.add("event-item__update");
