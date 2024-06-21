@@ -10,7 +10,6 @@ class EventView {
       this.addStartDate = document.getElementById("addStartDate");
       this.addEndDate = document.getElementById("addEndDate");
   
-      // Initializing the UI
       this.addEventButton.addEventListener("click", () => this.showAddEventForm());
       this.cancelAddButton.addEventListener("click", () => this.hideAddEventForm());
     }
