@@ -3,13 +3,13 @@
 const API_URL = "http://localhost:3000/events";
 
 const eventApi = {
-  async getEvents() {
-    const response = await fetch(API_URL);
+  getEvents() {
+    const response =  fetch(API_URL);
     return response.json();
   },
 
-  async addEvent(event) {
-    const response = await fetch(API_URL, {
+  addEvent(event) {
+    const response =  fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,8 +19,8 @@ const eventApi = {
     return response.json();
   },
 
-  async updateEvent(id, updates) {
-    const response = await fetch(`${API_URL}/${id}`, {
+  updateEvent(id, updates) {
+    const response =  fetch(`${API_URL}/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -30,8 +30,8 @@ const eventApi = {
     return response.json();
   },
 
-  async deleteEvent(id) {
-    const response = await fetch(`${API_URL}/${id}`, {
+  deleteEvent(id) {
+    const response =  fetch(`${API_URL}/${id}`, {
       method: "DELETE",
     });
     return response.ok;

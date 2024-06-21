@@ -1,4 +1,3 @@
-// features/view.js
 
 class EventView {
     constructor() {
